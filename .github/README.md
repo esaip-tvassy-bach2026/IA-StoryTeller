@@ -1,5 +1,5 @@
 # IA-StoryTeller
-Creating great and wonderful stories and counts!
+WWWCreating great and wonderful stories and counts!
 ## About
 IA-StoryTeller is an Android application that permits you create stories and counts with the Mistral AI API.
 ## Usage
