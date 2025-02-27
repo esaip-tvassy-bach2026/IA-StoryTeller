@@ -1,6 +1,7 @@
 # IA-StoryTeller
 Creating great and wonderful stories and counts!
-## About
+## Where are you now?
+### About
 IA-StoryTeller is an Android application that permits you create stories and counts with the Mistral AI API.
 ## Usage
 To use this application, you **must** have an Twitter (his name changed to X now) account. You can't use this application without this.<br />However, you don't need a Mistral or Le Chat account, because the AI is directly included in the app.
