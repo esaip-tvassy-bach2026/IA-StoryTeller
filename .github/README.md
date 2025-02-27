@@ -8,5 +8,7 @@ To use this application, you **must** have an Twitter (his name changed to X now
 When you open the app, you will be prompt to log in with an Twitter account. Then, you will have acces to the application main functions.<br />At the end, when your count or story is created, you will have the possibility to post it on Twitter in a tweet.
 ## Contributors
 Thanks for all contributors in this project. The main contributors in this project are :
-* Thomas VASSY--ROUSSEAU : [esaip-tvassy-bach2026](https://github.com/esaip-tvassy-bach2026) ;
+
+* Thomas VASSY--ROUSSEAU : [esaip-tvassy-bach2026](https://github.com/esaip-tvassy-bach2026).
+
 * [Akuma2526271](https://github.com/Akuma2526271) (Real name of this contributor is hidden for privacy).
