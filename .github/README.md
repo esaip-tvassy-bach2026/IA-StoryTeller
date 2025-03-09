@@ -9,9 +9,9 @@ There **won't** be any support for this Android app, it is provided only "as-is"
 ## Usage
 To use this application, you **must** have an Twitter (his name changed to X now) account. You can't use this application without this.<br />However, you don't need a Mistral or Le Chat account, because the AI is directly included in the app.
 
-When you open the app, you will be prompt to log in with an Twitter account. Then, you will have acces to the application main functions.<br />At the end, when your count or story is created, you will have the possibility to post it on Twitter in a tweet.
+When you open the app, you will be prompt to log in with an Twitter account. Then, you will have acces to the application main functions.<br />*At the end, when your count or story is created, you will have the possibility to post it on Twitter in a tweet.*
 ## License
-The license of this project is available in the '.github' folder in the 'main' branch or the version tag you want.
+The license of this project is available in the `.github` folder in the `main` branch or the version tag you want.
 **CAUTION:** This license may change at any time without notification. Please be careful and regulary check the updates.
 ## Contributors
 Thanks for all contributors in this project. The main contributors in this project are :
