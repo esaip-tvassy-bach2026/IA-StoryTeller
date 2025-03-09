@@ -1,5 +1,7 @@
 # The Clear BSD License
-Copyright (c) 2025-2027 Thomas VASSY--ROUSSEAU<br />All rights reserved.
+Copyright (c) 2025-2026 Thomas VASSY--ROUSSEAU and all the contributors past and present of the IA-StoryTeller project. All rights reserved.<br />All other tradermarks mentionned in this application are the property of their respective owners.
+
+For a clear list of all the contributors past and present of this project, please see the `README.md` file in the `.github` folder.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:
 
