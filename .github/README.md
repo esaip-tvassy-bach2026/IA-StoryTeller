@@ -1,4 +1,6 @@
 # IA-StoryTeller
+[![Analyzing functions](https://github.com/esaip-tvassy-bach2026/IA-StoryTeller/actions/workflows/analyzing_functions.yml/badge.svg?branch=main)](https://github.com/esaip-tvassy-bach2026/IA-StoryTeller/actions/workflows/analyzing_functions.yml)
+
 Creating great and wonderful stories and counts!
 ## About
 IA-StoryTeller is an Android application that permits you create stories and counts with the Mistral AI API.
