@@ -37,6 +37,9 @@ dependencies:
   supabase_flutter: ^2.8.4
   flutter_dotenv: ^5.2.1
   app_links: ^6.4.0
+  twitter_api_v2: ^4.0.2
+  http: ^0.13.6
+  clipboard: ^0.1.3
 
 dev_dependencies:
   flutter_test:

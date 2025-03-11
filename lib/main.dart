@@ -5,7 +5,8 @@ import './loginpage.dart';
 
 /*
 This is the main file of IA StoryTeller project. It contains the base code and loads the initial functions.
- */
+Made by Thomas VASSY--ROUSSEAU.
+*/
 
 Future<void> main() async {
 

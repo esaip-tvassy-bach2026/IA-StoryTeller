@@ -6,7 +6,8 @@ import './homepage.dart';
 
 /*
 This is the code for the login page screen.
- */
+Made by Thomas VASSY--ROUSSEAU.
+*/
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -18,23 +19,31 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // Mise en place des liens profonds
   late AppLinks _appLinks;
+  // Uniquement pour le developpement
   String ? _deppLink;
 
   @override
   void initState() {
     super.initState();
-    _initializeDeppLinkListener();
+    // J'utilise WidgetsBinding ici pour corriger un bug (suggestion de code copie-colle a partir d'Internet).
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _initializeDeppLinkListener(); // J'intialise ici l'ecoute des liens profonds (code redige par moi-meme).
+    });
 
     // Veririfcation de la connexion de l'utilisateur
     final session = Supabase.instance.client.auth.currentSession;
     if (session != null) {
-      // print("Utilisateur deja connecte avec l'e-mail : ${session.user?.email}");
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => HomePage(),
-        ),
-      );
+      // Uniquement pour le developpement
+      print("Utilisateur deja connecte avec l'e-mail : ${session.user.email}");
+      // Meme chose que ligne 28.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomePage(),
+          ),
+        );
+      });
     }
   }
 
@@ -58,26 +67,26 @@ class _LoginPageState extends State<LoginPage> {
 
   // Gestion des liens profonds reçus
   void _handleDeppLink(Uri uri) {
+
+    // Utiliser uniquement en conditions de developpement
     setState(() {
       _deppLink = uri.toString();
-
-      /*
-      Si besoin pour le developpement
       print('Le lien profond qui a ete recu est : $_deppLink');
-      */
-
     });
 
     // Verification pour savoir si le lien reçu est bien celui qui correspond a notre application
     if (uri.scheme == 'io.supabase.flutterapp' &&
         uri.host == 'login-callback') {
-      // Navigation vers l'ecran principal de l'application
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => HomePage(),
-        ),
-      );
+      // Meme chose que ligne 28.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        // Navigation vers l'ecran principal de l'application
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomePage(),
+          ),
+        );
+      });
     }
   }
 
@@ -122,6 +131,7 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
+  // Partie affichage de la page
   @override
   Widget build(BuildContext context) {
     return Scaffold(
