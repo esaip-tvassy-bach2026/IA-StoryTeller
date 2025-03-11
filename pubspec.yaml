@@ -8,10 +8,14 @@ environment:
   sdk: ^3.0.0
 
 dependencies:
+  clipboard: ^0.1.3
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.2.1
   http: ^0.13.6
   speech_to_text: ^6.1.1
+  supabase_flutter: ^2.8.4
+  twitter_api_v2: ^4.0.2
 
 dev_dependencies:
   flutter_test:
