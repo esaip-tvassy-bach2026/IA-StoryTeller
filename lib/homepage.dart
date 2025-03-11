@@ -5,7 +5,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:clipboard/clipboard.dart';
 // A n'utiliser qu'en cas de debogage ou de tests qui ne fonctionnent pas
 // import 'package:http/http.dart' as http;
-import './loginpage.dart';
+import './loggedout.dart';
 
 /*
 This is the code for the home page screen.
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => LoginPage(),
+          builder: (context) => LoggedOutPage(),
         ),
       );
 
