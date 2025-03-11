@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:app_links/app_links.dart'; // Permet de gerer les liens profonds et les redirections au sein de l'application
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter/foundation.dart'; // Package pour lancer le WebView
-import './homepage.dart';
+import './selectionscreen.dart';
 
 /*
 This is the code for the login page screen.
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HomePage(),
+            builder: (context) => StoryTypeSelectionScreen(),
           ),
         );
       });
@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HomePage(),
+            builder: (context) => StoryTypeSelectionScreen(),
           ),
         );
       });

@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
   // Publier un Tweet a partir de la reponse de l'IA
   Future<void> _postTweet() async {
     // Recuperation des cles API de Twitter dans .env
+    await dotenv.load();
     final apiKey = dotenv.env['KEY_TWITTER'];
     final apiSecret = dotenv.env['SECRET_TWITTER'];
 
